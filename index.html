@@ -9,7 +9,15 @@
     <title>Quiz Website</title>
 </head>
 <body>
-<main>
+<div id="password-modal">
+    <div class="modal-content">
+        <h2>Введите пароль для доступа к контенту</h2>
+        <input type="password" id="password-input" placeholder="Пароль">
+        <button id="submit-password">Войти</button>
+        <p id="password-error" class="error"></p>
+    </div>
+</div>
+<main id="main-content" style="display: none;">
     <h1>Тест из 3027 вопросов</h1>
     <section>
         <div id="current-page"></div>
